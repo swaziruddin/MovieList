@@ -14,7 +14,7 @@ public class SeleniumTest {
 		WebDriver webDriver = new FirefoxDriver();
 		webDriver.get(MOVIELISTMAINURL);
 		System.out.println("Succesfully opened localhost");
-		if (webDriver.findElement(By.id("searchTermId")).getText().equalsIgnoreCase("Search Term:")){
+		if (webDriver.findElement(By.id("searchTermText")).getText().equalsIgnoreCase("Search Term:")){
 			System.out.println("Found search box text");
 		} else {
 			System.out.println("oops! Should have found search box text");

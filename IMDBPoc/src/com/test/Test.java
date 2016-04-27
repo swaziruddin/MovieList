@@ -6,8 +6,7 @@ public class Test{
 	
 	@org.junit.Test
 	public void testMessage(){
-		String message = "message";
-		
+		String message = "message";		
 		assertTrue("Strings should be equal!", message.equals("message"));
 	}
 

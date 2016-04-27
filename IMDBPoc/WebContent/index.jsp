@@ -9,7 +9,7 @@
 
 <body>
 <form id="myAjaxRequestForm">
-	<b>Search Term:</b>
+	<div id=searchTermText><b>Search Term:</b></div>
 	<input type="text" name="searchTerm" id="searchTermId" size="10"/>
 	<input id="myButton" type="submit" value="Sumbit" onClick="searchIMDB(document.getElementById('searchTermId').value)"/>
 </form>
