@@ -1,0 +1,57 @@
+/*******CUSTOM*************/
+
+body {
+	overflow-y: scroll;
+	text-rendering: optimizeLegibility;
+	border: 0;
+}
+
+div.errorDiv{
+	vertical-align: middle;
+	color: red;
+}
+
+div.formDiv {
+	padding: 5px;
+	vertical-align: middle;
+}
+
+/** display on login and welcome pages **/
+div.leftDivLogin {
+	display: table-cell;
+	min-width: 160px;
+    border: 10;
+    padding: 10px;
+}
+
+div.rightDivLogin {
+	display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/** display on main pages of application **/
+div.leftDiv {
+	display: table-cell;
+	width: 100%
+}
+
+div.rightDiv {
+	display: table-cell;
+}
+
+div.container {
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+/** this is for the header- the welcome text and logout button **/
+div.headerDiv{
+	top:0
+}
+
+div.bodyDiv{
+	bottom:0;
+}

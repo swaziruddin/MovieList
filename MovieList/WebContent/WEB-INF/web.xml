@@ -1,0 +1,48 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MovieList</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>com.movielist.ui.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>SignupServlet</servlet-name>
+	<servlet-class>com.movielist.ui.SignupServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>SignupServlet</servlet-name>
+	<url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>WelcomeServlet</servlet-name>
+	<servlet-class>com.movielist.ui.WelcomeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>WelcomeServlet</servlet-name>
+	<url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>LogoutServlet</servlet-name>
+	<servlet-class>com.movielist.ui.LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>LogoutServlet</servlet-name>
+	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
