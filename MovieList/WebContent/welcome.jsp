@@ -11,7 +11,8 @@
 <body>
 <!--  protect the page by checking to make sure the correct cookie is set -->
 <!--  fix- this code doesn't detect the cookie the first time around and redirects -->
-<%
+<!--
+
 	String userId = null;
 	Cookie[] cookies = request.getCookies();
 	if (cookies != null) {
@@ -23,7 +24,7 @@
 	if (userId == null)
 		response.sendRedirect("login");
 %>
-
+-->
 <!-- if there are errors, show them -->
 <c:forEach var="error" items="${errors}">
 	<div class="errorDiv"><c:out value="${error}"/></div>
