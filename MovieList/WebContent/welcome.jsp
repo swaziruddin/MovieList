@@ -10,21 +10,21 @@
 
 <body>
 <!--  protect the page by checking to make sure the correct cookie is set -->
-<!--  fix- this code doesn't detect the cookie the first time around and redirects -->
-<!--
-
-	String userId = null;
-	Cookie[] cookies = request.getCookies();
-	if (cookies != null) {
-		for (Cookie cookie : cookies) {
-			if (cookie.getName().equals("userId"))
-				userId = cookie.getValue();
-			}
+<script>
+	var cookies = document.cookie.split(';');
+	var userId;
+	for (var i=0; i<cookies.length; i++){
+		var cookie = cookies[i];
+		var cookieKeyValue = cookie.split("=");
+		if (cookieKeyValue[0] == "userId"){
+			userId = cookieKeyValue[1];
+		}
 	}
-	if (userId == null)
-		response.sendRedirect("login");
-%>
--->
+	if (userId == null){
+		window.location = "login";
+	}
+</script>
+
 <!-- if there are errors, show them -->
 <c:forEach var="error" items="${errors}">
 	<div class="errorDiv"><c:out value="${error}"/></div>
