@@ -11,6 +11,16 @@
 	<div id="leftDiv" class="leftDiv">
 		<input type="button" value="Click here to get the newest lenders" 
 			id="newestLenders" onClick="getNewestLenders()"/>
+		<p>
+		<!--  would be nice to render the paging options dynamically- a todo -->
+		<input type="radio" name="page" value="1" id="page" checked
+			onClick="resetPaging()">1<br>
+		<input type="radio" name="page" value="2" id="page"
+			onClick="resetPaging()">2<br>
+		<input type="radio" name="page" value="3" id="page"
+			onClick="resetPaging()">3<br>
+		<input type="radio" name="page" value="4" id="page"
+			onClick="resetPaging()">4<br>
 	</div>
 	<div id="rightDiv" class="rightDiv">
 		<div id="resultsDiv"></div>
