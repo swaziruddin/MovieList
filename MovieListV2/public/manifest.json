@@ -1,0 +1,8 @@
+{
+  "short_name": "Movielist",
+  "name": "Make your Custom Movielist",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

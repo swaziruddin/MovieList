@@ -1,0 +1,51 @@
+.movieSearch {
+  text-align: center;
+}
+
+.rowElement {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.inline-block-child {
+  display: inline-block;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.topPadding {
+  padding-top: 2rem;
+}
+
+.greySurround {
+  background-color: #E7E9EB;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.searchResult {
+  border-bottom: #E7E9EB solid 0.1rem;
+  margin: 0 auto;
+  width: 30rem;
+  height: 15rem;
+  padding-top: 0.25rem;
+}
+
+.searchResultTitle {
+  border-bottom: #AAB7B8 solid 0.1rem;
+  margin: 0 auto;
+  width: 30rem;
+}
+
+.moviePoster{
+  float: left;
+  width: 10rem;
+  height: 15rem;
+}
+
+.pagination {
+  margin-left: auto;
+  width: 35rem;
+}
